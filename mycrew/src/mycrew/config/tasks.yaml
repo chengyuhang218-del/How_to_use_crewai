@@ -1,0 +1,36 @@
+research_task:
+  description: >
+    Use the search tool.
+
+    Find AI papers released in the last 3 days.
+
+    You MUST provide publication dates.
+
+    You MUST use the search tool before answering.
+
+    If you do not use the search tool,
+    the task is incomplete.
+
+  expected_output: >
+    A ranked list of 5 influential papers about {topic}, based on internet search results.
+
+  agent: researcher
+
+
+reporting_task:
+  description: >
+    Based on the research findings, create a comprehensive report.
+
+    Include:
+    - Historical background
+    - Key papers
+    - Major innovations
+    - Impact on subsequent research
+    - Current relevance
+
+  expected_output: >
+    A detailed markdown report.
+
+  agent: reporting_analyst
+
+  output_file: report.md
